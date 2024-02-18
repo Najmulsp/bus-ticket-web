@@ -50,9 +50,9 @@
         <div class="min-h-screen bg-[linear-gradient(45deg,rgba(0,0,0,0),rgba(0,0,0,0)),url(images/banner.png)] bg-no-repeat bg-contain flex flex-col items-center space-y-2 lg:space-y-12 ]">
           <h1 class="text-3xl lg:text-6xl font-extrabold text-white text-center  pt-6">End-to-End Travel with <h1 class="text-3xl lg:text-6xl font-extrabold text-green-500">Musafir Paribahan</h1>
           <p class="text-white text-center ">Plan your travel with confidence.Embark on your dream journey with absolute assurance <br> as you plan your travel with unwavering confidence.</p>
-          <button class="bg-green-500 text-xl text-white px-6 py-4 rounded-xl mx-auto">Buy Tickets</button>
+          <button onclick="chooseTicket()" class="btn bg-green-500 text-xl text-white px-6 py-4 rounded-xl mx-auto">Buy Tickets</button>
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-6  lg:translate-y-28 border w-full lg:w-3/4 lg:mx-auto">
-            <div class="flex justify-evenly lg:justify-center items-center gap-4 border w-full lg:w-80 px-8 py-8 rounded-xl bg-white border-b-4 border-b-lime-500">
+            <div class="flex justify-evenly lg:justify-center items-center gap-4 border w-full lg:w-80 px-8 py-8 rounded-xl bg-white border- </div>" b-4 border-b-lime-500">
                 <div>
                   <img  src="images/people.png" alt="">
                 </div>
@@ -85,8 +85,8 @@
     </div>
     </section>
     <!-- best offer section -->
-    <section>
-      <div class="border container lg:px-24 px-8 mx-auto flex flex-col items-center space-y-10">
+    <section class="">
+      <div class="border container lg:px-24 px-8 mx-auto flex flex-col items-center space-y-10 mb-10">
         <h1 class="text-4xl font-bold ">Best offers for you</h1>
 
         <div class="flex flex-col lg:flex-row justify-between gap-8 w-full">
@@ -119,9 +119,9 @@
       </div>
     </section>
     <!-- Paribahan section -->
-    <section>
+    <section >
       <!-- overall main div -->
-      <div class="border-t-4 rounded-t-3xl border-lime-400 bg-red-50 space-y-6 mt-16 p-16 ">
+      <div id="ticketing" class="border-t-4 rounded-t-3xl border-lime-400 bg-red-50 space-y-6 mt-16 p-16 hidden">
         <h1 class="text-4xl font-bold text-center">Musafir Paribahan</h1>
         <p class="text-center">Selecting the right ticket is crucial for a seamless journey, considering factors like travel class, duration, and any additional amenities.</p>
         <div class="border border-green-600 bg-white rounded-2xl container lg:px-24 px-8 mx-auto flex gap-6 p-8 ">
@@ -143,7 +143,7 @@
                     </div>
                    </div>
                    <!--  -->
-                <div class="bg-slate-300 rounded-2xl p-6 space-y-6">
+                <div class="bg-red-50 rounded-2xl p-6 space-y-6">
                     <!-- part 1 -->
                 <div class="flex justify-between">
                     <p>Route</p>
@@ -194,64 +194,64 @@
                         <kbd class="kbd lg:px-14 lg:py-6 bg-slate-200"><img src="images/wheel.svg" alt=""></kbd>
                     </div>
                     <div class="flex justify-between w-full">
-                        A<kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">A1</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14 lg:py-6">A2</kbd>
-                        <kbd class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">A3</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">A4</kbd>
+                        A<kbd  id="A1" class="kbd px-4 ml-2 lg:px-14  lg:py-6">A1</kbd>
+                        <kbd id="A2"  class="kbd px-4 ml-2 lg:px-14 lg:py-6">A2</kbd>
+                        <kbd id="A3"  class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">A3</kbd>
+                        <kbd  id="A4" class="kbd px-4 ml-2 lg:px-14  lg:py-6">A4</kbd>
                     </div>
                     <div class="flex justify-between w-full">
-                        B<kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">B1</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">B2</kbd>
-                        <kbd class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">B3</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">B4</kbd>
+                        B<kbd id="B1" class="kbd px-4 ml-2 lg:px-14  lg:py-6">B1</kbd>
+                        <kbd id="B2" class="kbd px-4 ml-2 lg:px-14  lg:py-6">B2</kbd>
+                        <kbd id="B3" class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">B3</kbd>
+                        <kbd id="B4" class="kbd px-4 ml-2 lg:px-14  lg:py-6">B4</kbd>
                     </div>
                     <div class="flex justify-between w-full">
-                        C<kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">C1</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">C2</kbd>
-                        <kbd class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">C3</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">C4</kbd>
+                        C<kbd id="C1" class="kbd px-4 ml-2 lg:px-14  lg:py-6">C1</kbd>
+                        <kbd id="C2" class="kbd px-4 ml-2 lg:px-14  lg:py-6">C2</kbd>
+                 <kbd id="C3" class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">C3</kbd>
+                        <kbd id="C4" class="kbd px-4 ml-2 lg:px-14  lg:py-6">C4</kbd>
                     </div>
                     <div class="flex justify-between w-full">
-                        D<kbd class="kbd px-4 ml-2 lg:px-14 lg:py-6">D1</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14 lg:py-6">D2</kbd>
-                        <kbd class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">D3</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">D4</kbd>
+                        D<kbd id="D1" class="kbd px-4 ml-2 lg:px-14 lg:py-6">D1</kbd>
+                        <kbd id="D2" class="kbd px-4 ml-2 lg:px-14 lg:py-6">D2</kbd>
+                        <kbd id="D3" class="kbd  px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">D3</kbd>
+                        <kbd  id="D4"class="kbd px-4 ml-2 lg:px-14  lg:py-6">D4</kbd>
                     </div>
                     <div class="flex justify-between w-full">
-                        E<kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">E1</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">E2</kbd>
-                        <kbd class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">E3</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">E4</kbd>
+                        E<kbd id="E1" class="kbd px-4 ml-2 lg:px-14  lg:py-6">E1</kbd>
+                        <kbd id="E2" class="kbd px-4 ml-2 lg:px-14  lg:py-6">E2</kbd>
+                        <kbd id="E3" class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">E3</kbd>
+                        <kbd id="E4" class="kbd px-4 ml-2 lg:px-14  lg:py-6">E4</kbd>
                     </div>
                     <div class="flex justify-between w-full">
-                        F<kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">F1</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">F2</kbd>
-                        <kbd class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">F3</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">F4</kbd>
+                        F<kbd id="F1" class="kbd px-4 ml-2 lg:px-14  lg:py-6">F1</kbd>
+                        <kbd id="F2" class="kbd px-4 ml-2 lg:px-14  lg:py-6">F2</kbd>
+                        <kbd id="F3" class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">F3</kbd>
+                        <kbd id="F4" class="kbd px-4 ml-2 lg:px-14  lg:py-6">F4</kbd>
                     </div>
                     <div class="flex justify-between w-full">
-                        G<kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">G1</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">G2</kbd>
-                        <kbd class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">G3</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">G4</kbd>
+                        G<kbd id="G1" class="kbd px-4 ml-2 lg:px-14  lg:py-6">G1</kbd>
+                        <kbd id="G2" class="kbd px-4 ml-2 lg:px-14  lg:py-6">G2</kbd>
+                        <kbd id="G3" class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">G3</kbd>
+                        <kbd id="G4" class="kbd px-4 ml-2 lg:px-14  lg:py-6">G4</kbd>
                     </div>
                     <div class="flex justify-between w-full">
-                        H<kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">H1</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14 lg:py-6">H2</kbd>
-                        <kbd class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">H3</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">H4</kbd>
+                        H<kbd id="H1" class="kbd px-4 ml-2 lg:px-14  lg:py-6">H1</kbd>
+                        <kb id="H2"d class="kbd px-4 ml-2 lg:px-14 lg:py-6">H2</kb>
+                        <kbd id="H3" class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">H3</kbd>
+                        <kbd id="H4" class="kbd px-4 ml-2 lg:px-14  lg:py-6">H4</kbd>
                     </div>
                     <div class="flex justify-between w-full">
-                        I<kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">I1</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">I2</kbd>
-                        <kbd class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">I3</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">I4</kbd>
+                        I<kbd id="I1" class="kbd px-4 ml-2 lg:px-14  lg:py-6">I1</kbd>
+                        <kbd id="I2" class="kbd px-4 ml-2 lg:px-14  lg:py-6">I2</kbd>
+                        <kbd id="I3" class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">I3</kbd>
+                        <kbd id="I4" class="kbd px-4 ml-2 lg:px-14  lg:py-6">I4</kbd>
                     </div>
                     <div class="flex justify-between w-full">
-                        J<kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">J1</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">J2</kbd>
-                        <kbd class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">J3</kbd>
-                        <kbd class="kbd px-4 ml-2 lg:px-14  lg:py-6">J4</kbd>
+                        J<kbd id="J1" class="kbd px-4 ml-2 lg:px-14  lg:py-6">J1</kbd>
+                        <kbd id="J2" class="kbd px-4 ml-2 lg:px-14  lg:py-6">J2</kbd>
+                        <kbd id="J3" class="kbd px-4 ml-10 lg:px-14  lg:py-6 lg:ml-48">J3</kbd>
+                        <kbd id="J4" class="kbd px-4 ml-2 lg:px-14  lg:py-6">J4</kbd>
                     </div>
             </div>
             <!-- book your seat -->
@@ -363,6 +363,9 @@
         </nav>
       </footer>
     </section>
+
+    <script src="bus-ticket.js"></script>
+    <script src="utility.js"></script>
 </body>
 </html>
 
