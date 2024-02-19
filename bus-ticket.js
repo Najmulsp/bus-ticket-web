@@ -43,3 +43,26 @@ document.getElementById('grand-price').innerText = grandPriceNumber + 550;
 function chooseTicket(){
     showElementById('ticketing');   
 }
+
+
+function discountCoupon(){
+    const finalPrice =document.getElementById('total-price').innerText;
+    const finalPriceNumber =parseInt(finalPrice);
+
+    // get the value of coupon input
+    const couponValue =document.getElementById('coupon').value;
+    if(couponValue === "NEW15"){
+        const discountPrice = finalPriceNumber * 0.15;
+         document.getElementById('grand-price').innerText =finalPrice -discountPrice;
+         document.getElementById('coupon').classList.add('hidden');
+         document.getElementById('apply').classList.add('hidden'); 
+    }
+    if(couponValue === "Couple20"){
+        const discountedPrice = finalPriceNumber * 0.2;
+        document.getElementById('grand-price').innerText =finalPrice -discountedPrice;
+          document.getElementById('coupon').classList.add('hidden');
+          document.getElementById('apply').classList.add('hidden'); 
+    }
+  
+
+}
