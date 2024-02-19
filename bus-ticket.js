@@ -36,6 +36,14 @@ const grandPriceNumber =parseInt(grandPrice);
 document.getElementById('grand-price').innerText = grandPriceNumber + 550;
 
 
+const fourSeats = document.getElementById('increase-selected').innerText;
+if(document.getElementById('increase-selected').innerText > 4){
+  
+    alert('You could not purchase more than four tickets');
+}
+//document.getElementsByClassName('chair').classList.add('disabled');
+// document.getElementsByClassName('chair').disabled = true;
+
     })
 }
 
@@ -43,7 +51,9 @@ document.getElementById('grand-price').innerText = grandPriceNumber + 550;
 function chooseTicket(){
     showElementById('ticketing');   
 }
-
+function visible(){
+    showElementById('success');
+}
 
 function discountCoupon(){
     const finalPrice =document.getElementById('total-price').innerText;
