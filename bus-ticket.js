@@ -39,21 +39,14 @@ document.getElementById('grand-price').innerText = grandPriceNumber + 550;
 
 const fourSeats = document.getElementById('increase-selected').innerText;
 if(document.getElementById('increase-selected').innerText > 4){
-  
+
     alert('You could not purchase more than four tickets');
 }
+
 //document.getElementsByClassName('chair').classList.add('disabled');
 // document.getElementsByClassName('chair').disabled = true;
 
     })
-}
-
-
-function chooseTicket(){
-    showElementById('ticketing');   
-}
-function visible(){
-    showElementById('success');
 }
 
 function discountCoupon(){
@@ -68,12 +61,12 @@ function discountCoupon(){
          document.getElementById('coupon').classList.add('hidden');
          document.getElementById('apply').classList.add('hidden'); 
     }
-    if(couponValue === "Couple20"){
+    
+    else if(couponValue === "Couple20"){
         const discountedPrice = finalPriceNumber * 0.2;
         document.getElementById('grand-price').innerText =finalPrice -discountedPrice;
           document.getElementById('coupon').classList.add('hidden');
           document.getElementById('apply').classList.add('hidden'); 
     }
-  
 
 }
