@@ -12,7 +12,7 @@
 <body>
     <!-- header section -->
     <header>
-    <div class="container lg:px-24 px-8 mx-auto">
+    <div class="container lg:px-24 px-8 mx-auto p-8">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -26,7 +26,7 @@
                     <li><a>Search</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-4xl font-bold">Musafir Paribahan</a>
+              <a class="btn btn-ghost text-2xl lg:text-4xl font-bold">Musafir Paribahan</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -47,13 +47,13 @@
     <!-- banner section -->
     <section>
     <div class="container lg:px-24 px-8 mx-auto    ">
-        <div class="min-h-screen bg-[linear-gradient(45deg,rgba(0,0,0,0),rgba(0,0,0,0)),url(images/banner.png)] bg-no-repeat bg-contain flex flex-col items-center space-y-2 lg:space-y-12 ]">
-          <h1 class="text-3xl lg:text-6xl font-extrabold text-white text-center  pt-6">End-to-End Travel with <h1 class="text-3xl lg:text-6xl font-extrabold text-green-500">Musafir Paribahan</h1>
+        <div class="min-h-screen bg-[linear-gradient(45deg,rgba(0,0,0,0),rgba(0,0,0,0)),url(images/banner.png)] bg-no-repeat bg-contain flex flex-col items-center lg:space-y-12 ]">
+          <h1 class="text-3xl lg:text-6xl font-extrabold text-white text-center  lg:pt-6">End-to-End Travel with <h1 class="text-3xl lg:text-6xl font-extrabold text-green-500">Musafir Paribahan</h1>
           <p class="text-white text-center ">Plan your travel with confidence.Embark on your dream journey with absolute assurance <br> as you plan your travel with unwavering confidence.</p>
-          <button onclick="chooseTicket()" class="btn bg-green-500 text-xl text-white px-6 py-4 rounded-xl mx-auto">Buy Tickets</button>
+          <button onclick="chooseTicket()" class="btn bg-green-500 text-xl text-white px-6  rounded-xl mx-auto">Buy Tickets</button>
           <!-- <a href="ticketing" class="btn bg-green-500 text-xl text-white px-6 py-4 rounded-xl mx-auto">Buy Tickets</a> -->
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6  lg:translate-y-28 border w-full lg:w-3/4 lg:mx-auto">
-            <div class="flex justify-evenly lg:justify-center items-center gap-4 border w-full lg:w-80 px-8 py-8 rounded-xl bg-white border-b-4 border-b-lime-500">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6  lg:translate-y-28 w-full lg:w-3/4 lg:mx-auto">
+            <div class="flex justify-evenly border lg:justify-center items-center gap-4 w-full lg:w-80 mt-6 lg:mt-0 px-8 py-8 rounded-xl bg-white border-b-4 border-b-lime-500">
                 <div>
                   <img  src="images/people.png" alt="">
                 </div>
@@ -87,32 +87,34 @@
     </section>
     <!-- best offer section -->
     <section class="">
-      <div class="border container lg:px-24 px-8 mx-auto flex flex-col items-center space-y-10 mb-10">
+      <div class=" container lg:px-24 px-8 mx-auto flex flex-col items-center space-y-10 mb-10">
         <h1 class="text-4xl font-bold ">Best offers for you</h1>
 
         <div class="flex flex-col lg:flex-row justify-between gap-8 w-full">
           <div class="flex justify-between items-center gap-6 bg-yellow-400 border rounded-2xl lg:w-3/6 p-8 lg:p-16">
             <div class="space-y-4">
-              <h1 class="text-5xl font-extrabold">15% OFF</h1>
-              <h3 class="text-3xl font-semibold">on your next purchase</h3>
-              <p class="text-2xl">use by February 2024</p>
+              <h1 class="text-3xl lg:text-5xl font-extrabold">15% OFF</h1>
+              <h3 class="text-xl lg:text-3xl font-semibold">on your next purchase</h3>
+              <p class="text-lg lg:text-2xl">use by February 2024</p>
             </div>
+            <img class="absolute translate-x-48 lg:translate-x-72 h-48 lg:h-72" src="images/cupon-devider.png" alt="">
             <div class="space-y-3">
-              <h2 class="text-3xl font-extrabold">NEW<sub>15</sub>
+              <h2 class="text-xl lg:text-3xl font-extrabold">NEW<sub>15</sub>
 
               </h2>
-              <p class="text-2xl">Coupon Code</p>
+              <p class="text-lg lg:text-2xl">Coupon Code</p>
             </div>
           </div>
           <div class="flex justify-around items-center gap-6 bg-pink-400 border rounded-2xl lg:w-3/6 p-8 lg:p-16">
             <div class=" space-y-4 ">
-              <h1 class="text-5xl font-extrabold">20% OFF</h1>
-              <h3 class="text-3xl font-semibold">on your next purchase</h3>
-              <p class="text-2xl">use by February 2024</p>
+              <h1 class="text-3xl lg:text-5xl font-extrabold">20% OFF</h1>
+              <h3 class="text-xl lg:text-3xl font-semibold">on your next purchase</h3>
+              <p class="text-lg lg:text-2xl">use by February 2024</p>
             </div>
+            <img class="absolute translate-x-10 lg:translate-x-20 h-48 lg:h-72" src="images/cupon-devider.png" alt="">
             <div class="space-y-3">
-              <h2 class="text-3xl font-extrabold">Couple 20</h2>
-              <p class="text-2xl">Coupon Code</p>
+              <h2 class="text-xl lg:text-3xl font-extrabold">Couple 20</h2>
+              <p class="text-xl lg:text-2xl">Coupon Code</p>
             </div>
           </div>
         </div>
@@ -122,14 +124,14 @@
     <!-- Paribahan section -->
     <section >
       <!-- overall main div -->
-      <div id="ticketing" class="border-t-4 rounded-t-3xl border-lime-400 bg-red-50 space-y-6 mt-16 p-16 hidden">
+      <div id="ticketing" class="border-t-2 rounded-t-[72px] border-lime-400 bg-red-50 space-y-6 mt-16 p-16 hidden">
         <h1 class="text-4xl font-bold text-center">Musafir Paribahan</h1>
         <p class="text-center">Selecting the right ticket is crucial for a seamless journey, considering factors like travel class, duration, and any additional amenities.</p>
-        <div class="border border-green-600 bg-white rounded-2xl container lg:px-24 px-8 mx-auto flex gap-6 p-8 ">
+        <div class=" bg-white rounded-2xl container lg:px-16 px-8 mx-auto flex flex-col lg:flex-row  gap-6 p-8 ">
             <!-- bus info div -->
-            <div class="border border-blue-600 flex-1 flex flex-col gap-6 ">
+            <div class=" flex flex-1 flex-col gap-6 ">
                 <!-- seat div -->
-                <div class="border border-x-yellow-500 flex justify-between">
+                <div class=" flex flex-col lg:flex-row justify-between gap-8 ">
                     <div class="flex gap-6 justify-center items-center">
                         <div><img src="images/bus-logo.png" alt=""></div>
                         <div>
@@ -147,8 +149,8 @@
                 <div class="bg-red-50 rounded-2xl p-6 space-y-6">
                     <!-- part 1 -->
                 <div class="flex justify-between">
-                    <p>Route</p>
-                    <p class="font-semibold">Dhaka - Sylhet</p>
+                    <p>Route </p>
+                    <p class="font-semibold"> Dhaka - Sylhet</p>
                 </div>
                 <hr>
                 <!-- part 2 -->
@@ -165,8 +167,9 @@
                 </div>
                 </div>
             </div>
+            
             <!-- 550 taka div -->
-            <div class="border border-blue-600 flex flex-col justify-center items-center ">
+            <div class="  flex flex-col justify-center items-center ">
                 <img src="images/fare.png" alt="">
                 <h1 class="text-2xl font-bold">550 Taka</h1>
                 <p>Per Seat</p>
@@ -178,7 +181,7 @@
             <div class="flex-1 p-6 space-y-6">
                 <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                 <hr>
-                <div class=" border border-orange-700 flex justify-between ">
+                <div class="flex justify-between ">
                     <div class="flex gap-2 ">
                         <img src="images/seat-gray.png" alt="">
                         <p>Available</p>
@@ -260,29 +263,23 @@
                 <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                 <hr>
                 <div class="border bg-slate-100 space-y-6 lg:p-6 p-2 -mr-4 rounded-2xl">
-                    <div class="flex  gap-24 text-xl font-semibold">
-                        <p class="w-16">Seat <span id="increase-selected">0</span></p>
+                    <div class="flex gap-8 lg:gap-24 text-xl font-semibold">
+                        <p class="w-16">Seat <span id="increase-selected" class="text-green-700 bg-green-200 w-8">0</span></p>
                         <p>Class</p>
                         <p>Price</p>
                     </div>
                     <hr>
                     <ul id="your-seat" class="flex flex-col gap-4  text-lg ">
-                        <!-- <p>C2</p>
-                        <p>Economy</p>
-                        <p>550</p> -->
+                       
                     </ul>
-                    <!-- <div class="flex gap-24 text-lg ">
-                        <p>C2</p>
-                        <p>Economy</p>
-                        <p>550</p>
-                    </div> -->
+                    
                     <hr>
                     <div class="flex justify-between text-xl font-semibold">
                       <p>Total Price</p>
                       <p>BDT <span id="total-price">0</span></p>
                     </div>
-                    <div onclick="discountCoupon()" class="relative"><button id="apply" class="btn absolute bg-emerald-500 text-white translate-x-60">Apply</button>
-                      <input id="coupon" type="text" placeholder="Have any copupon?" class="input input-bordered w-full max-w-xs"/>
+                    <div onclick="discountCoupon()" class="relative"><button id="apply" class="btn absolute bg-emerald-500 text-white translate-x-32 lg:translate-x-60 translate-y-2">Apply</button>
+                      <input id="coupon" type="text" placeholder="Have any copupon?" class="input input-bordered w-full max-w-xs p-8 "/>
                     </div>
                     <div class="flex justify-between text-xl font-semibold">
                       <p>Grand Total</p>
@@ -307,7 +304,7 @@
                   </div>
                   <input type="text" placeholder="Enter your name" class="input input-bordered w-full " />
                 </label>
-                <button onclick="visible()" class="btn btn-wide bg-green-500 w-full p-6">Next</button>
+                <button onclick="visible()" class="btn btn-wide bg-green-500 w-full text-white">Next</button>
                 <div class="label underline">
                   <span class="label-text-alt">Terms and Conditions</span>
                   <span class="label-text-alt">Cancellation Policy</span>
@@ -319,7 +316,7 @@
     <!--hidden success -->
     <section id="success" class="hidden">
       <div class="p-16 bg-stone-200">
-        <div class="flex flex-col  items-center gap-10 border bg-white w-1/2 mx-auto rounded-2xl p-10">
+        <div class="flex flex-col  items-center gap-4 lg:gap-10 border bg-white w-2/3 lg:w-1/2 mx-auto rounded-2xl p-10">
           <img src="images/success.png" alt="">
           <h2 class="text-green-500">SUCCESS</h2>
           <p class="font-semibold">Thank you for Booking Our Bus Seats. 
@@ -332,16 +329,16 @@
     <!-- this is footer section -->
     <section>
 
-      <footer class="px-8 lg:px-48 pt-14 lg;pt-36 pb-16 bg-[#030712] text-neutral-content">
+      <footer class="px-8 lg:px-48 pt-14 lg:pt-24 pb-16 bg-[#030712] text-neutral-content">
         
         <div class="flex justify-between">
-          <aside>
-            <h1 class="text-4xl font-bold">Musafir Paribahan</h1>
-            <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>          
+          <aside class="space-y-4">
+            <h1 class="text-2xl lg:text-4xl font-bold ">Musafir Paribahan</h1>
+            <p>Musafir-Ticket is digital platform to make your <br> daily commuting better.</p>          
           </aside> 
           <nav>
             <h6 class="footer-title">Download our app</h6> 
-            <div class="flex gap-4">
+            <div class="flex items-center gap-6">
               <div><img src="images/playstore.png" alt=""></div>
               <div class="flex flex-col ">
                 <p>GET IT ON</p>
@@ -351,12 +348,12 @@
           </nav>
         </div>
       </footer> 
-      <footer class="px-8 lg:px-48 pb-16 lg:pb-36 pt-16 border-t bg-[#030712] text-white  flex justify-between">
+      <footer class="px-8 lg:px-48 pb-16 lg:pb-24 pt-16 border-t bg-[#030712] text-white  flex justify-between gap-6">
         <aside class="">
-          <p>@all rights reserved, P-Ticket services limited.2024</p>
+          <p>@all rights reserved, Musafir-Ticket services limited.2024</p>
         </aside> 
         <nav class="">
-          <div class="grid grid-cols-3 gap-4">
+          <div class="flex gap-6">
             <a>Terms & condition</a>
             <a>Return & refund policy</a>
             <a>Privacy policy</a>

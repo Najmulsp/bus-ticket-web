@@ -22,9 +22,10 @@ for(const seat of seats){
         li.appendChild(p1);
         li.appendChild(p2);
         li.appendChild(p3);
-
+        
         li.classList.add('flex');
-        li.classList.add('gap-24');
+        li.classList.add('gap-8');
+        li.classList.add('lg:gap-24');
         yourSeat.appendChild(li);
 // add total price
 const totalPrice =document.getElementById('total-price').innerText;
