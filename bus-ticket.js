@@ -2,14 +2,27 @@ let count =40;
 let increase =0;
 const seats =document.getElementsByClassName('chair');
 for(const seat of seats){
-    seat.addEventListener("click", function(){
+   seat.addEventListener("click", function(){
+
+    seat.setAttribute("disabled",false);
+
+    const jajaho =document.getElementById('increase-selected').innerText
+    if(jajaho >3){
+        alert('you could not pursage more than four tickets');
+        return
+    }
+    
         seat.classList.add('bg-green-500');
         // show available seats
         count =count-1;
         document.getElementById('remain-seats').innerText=count;
+
+        
         // show selected count
         increase =increase + 1;
-        document.getElementById('increase-selected').innerText=increase;
+   const ektaMan = document.getElementById('increase-selected').innerText=increase;
+//         if (ektaMan <= 4) {
+   
         // create and append choosed seat
         const yourSeat =document.getElementById('your-seat');
         const li =document.createElement("li");
@@ -37,17 +50,26 @@ const grandPriceNumber =parseInt(grandPrice);
 document.getElementById('grand-price').innerText = grandPriceNumber + 550;
 
 
-const fourSeats = document.getElementById('increase-selected').innerText;
-if(document.getElementById('increase-selected').innerText > 4){
+})
+        
+}   
 
-    alert('You could not purchase more than four tickets');
-}
+
+  
+
 
 //document.getElementsByClassName('chair').classList.add('disabled');
 // document.getElementsByClassName('chair').disabled = true;
 
-    })
-}
+    
+
+
+// const fourSeats = document.getElementById('increase-selected').innerText;
+// const fourSeatsNumber =parseInt(fourSeats);
+// console.log(fourSeatsNumber)
+// if(fourSeatsNumber > 4){
+//     seat.setAttribute.setAttribute("disabled", "");
+// } 
 
 function discountCoupon(){
     const finalPrice =document.getElementById('total-price').innerText;
